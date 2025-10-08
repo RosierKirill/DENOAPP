@@ -1,5 +1,5 @@
+// deno run server.ts or deno serve server.ts
 import { Application, Router } from "oak";
-
 
 const books = new Map<string, object>();
 books.set("1", {
@@ -11,6 +11,7 @@ books.set("1", {
 const router = new Router();
 router
   .get("/", (context) => {
+    console.log(context.request.ip, context.request.url.host);
     context.response.body = "Hello world!";
   })
   .get("/book", (context) => {
