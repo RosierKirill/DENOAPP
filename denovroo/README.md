@@ -12,7 +12,7 @@ Une démonstration simple des fonctionnalités principales de **Deno** :
 
 ## Prérequis
 
-Installe Deno (si ce n’est pas déjà fait) :
+Installe Deno :
 
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
@@ -44,7 +44,7 @@ deno run main.ts
 
 Demande l'accès et si refus donne une erreur : `PermissionDenied: Requires --allow-read`
 
-Puis exécute avec la permission :
+Puis exécute en donnant la permission :
 
 ```bash
 deno run --allow-read main.ts
