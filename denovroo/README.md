@@ -12,7 +12,7 @@ Une démonstration simple des fonctionnalités principales de **Deno** :
 
 ## Prérequis
 
-Installe Deno :
+Installation de Deno :
 
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
@@ -39,7 +39,7 @@ deno run main.ts
 Essaye de lire un fichier local :
 
 ```bash
-deno run main.ts
+deno run secu.ts
 ```
 
 Demande l'accès et si refus donne une erreur : `PermissionDenied: Requires --allow-read`
@@ -47,13 +47,13 @@ Demande l'accès et si refus donne une erreur : `PermissionDenied: Requires --al
 Puis exécute en donnant la permission :
 
 ```bash
-deno run --allow-read main.ts
+deno run --allow-read secu.ts
 ```
 
 Même principe pour le réseau :
 
 ```bash
-deno run --allow-net main.ts
+deno run --allow-net secu.ts
 ```
 
 ---
